@@ -12,7 +12,7 @@
             <h3>🗃 {{ card.box | ordinal }} Box</h3>
         {% endifchanged %}    
         <article>
-            {{ card }}
+            {% include "cards/card.html" %}
         </article>
     {% endfor %}
 {% endblock content %}
